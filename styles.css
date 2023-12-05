@@ -1,0 +1,129 @@
+*{
+    font-family: "Inter",serif;
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+header {
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index:2;
+    border-bottom: 1px solid #EEE;
+}
+.header-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:1000px;
+    margin:0 auto;
+    padding:1.5rem 0;
+    color:#777;
+}
+.logo{
+    width:140px;
+}
+ul {
+    list-style-type: none;
+    display:flex;
+    font-size:0.9rem;
+    font-weight:300;
+}
+li {
+    padding: 0 1.5rem;
+    cursor: pointer;
+}
+.body-container{
+    padding-top: 7rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight:400;
+}
+.hero{
+    width: 1000px;
+    padding:1rem;
+    object-fit: cover;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btnSignup{
+    padding:0.75rem 2rem;
+    background:#387ED1;
+    border:0;
+    border-radius:0.25rem;
+    color:white;
+    font-size:1.05rem;
+    letter-spacing: 0.05rem;
+}
+
+.menu-btn {
+    width: 20px;
+    top: 0px;
+    position:relative;
+    margin:0 auto;
+    cursor:pointer;
+}
+.menu-btn span {
+    display:block;
+    position:relative;
+    height:2px;
+    width:100%;
+    background:#555;
+    border-radius:1rem;
+    left:0;
+}
+
+.menu-btn span:not(:first-child) {
+    margin-top:4px;
+}
+
+.hero-title {
+    letter-spacing: 0.05rem; 
+    padding-top: 3rem; 
+    color: #444; 
+    font-size: 2.6rem; 
+    font-weight: 400
+}
+
+.hero-subtitle{
+    letter-spacing: 0.05rem; color: #444; padding: 2rem 0; font-weight: 100; font-size: 1.2rem; padding-bottom: 2rem
+}
+
+@media only screen and (max-width: 600px) {
+    .header-container {
+        width:100%;
+        padding:1rem 1.5rem;
+    }
+    ul{
+        display:block
+    }
+    ul li {
+        display: none;
+      }
+      
+      ul > li:nth-of-type(6) {
+        display: block;
+        padding:0;
+      }
+    .logo{  
+        width:100px;
+    }
+    .hero{
+        width:100%;
+    }
+    .hero-title,
+    .hero-subtitle {
+        text-align: center;
+    }
+    .hero-subtitle {
+        padding:1rem;
+        line-height: 1.7;
+        letter-spacing:0;
+    }
+}
