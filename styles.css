@@ -305,6 +305,10 @@ footer {
     width: 50%; 
     padding: 1rem
 }
+.open-account-title{
+    font-weight: 400; 
+    font-size: 2rem;
+}
 @media only screen and (max-width: 600px) {
     .header-container {
         width:100%;
@@ -361,9 +365,16 @@ footer {
     .smallprint {
         width:100%;
     }
-    /* .header-container > li {
-        display:none;
-    } */
+    .price-container{
+        flex-direction: column;
+    }
+    .price-container .container {
+        width:100%;
+    }
+    .price-container > .container:first-child {
+        border-right:0;
+        border-bottom:1px solid #CCC
+    }
     .header-container > ul > li:nth-of-type(6) {
         display: block;
         padding:0;
@@ -376,5 +387,9 @@ footer {
     }
     .features-list{
         grid-template-columns: 1fr;
+    }
+    .open-account-title{
+        padding:1rem;
+        font-size:1.6rem;
     }
 }
