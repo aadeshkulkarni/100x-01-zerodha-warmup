@@ -196,7 +196,6 @@ a::after {
     font-weight: 300; 
     font-size: 1rem; 
     padding-bottom: 2rem;
-    width:500px;
     line-height:1.5
 }
 .price-container{
